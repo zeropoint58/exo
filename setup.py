@@ -28,14 +28,19 @@ install_requires = [
   "tqdm==4.66.4",
   "transformers==4.46.3",
   "uuid==1.30",
-  "tinygrad @ git+https://github.com/tinygrad/tinygrad.git@3b26e51fcebfc6576f4e0f99693e6f1406d61d79",
+  "uvloop==0.21.0",
+  "tinygrad @ git+https://github.com/tinygrad/tinygrad.git@ec120ce6b9ce8e4ff4b5692566a683ef240e8bc8",
 ]
 
 extras_require = {
-  "formatting": ["yapf==0.40.2",], "apple_silicon": [
-    "mlx==0.20.0",
-    "mlx-lm==0.19.3",
-  ], "windows": ["pywin32==308",], "nvidia-gpu": ["nvidia-ml-py==12.560.30",], "amd-gpu": ["pyrsmi==0.2.0"]
+  "formatting": ["yapf==0.40.2",],
+  "apple_silicon": [
+    "mlx==0.22.0",
+    "mlx-lm==0.21.1",
+  ],
+  "windows": ["pywin32==308",],
+  "nvidia-gpu": ["nvidia-ml-py==12.560.30",],
+  "amd-gpu": ["pyrsmi==0.2.0"],
 }
 
 # Check if running on macOS with Apple Silicon
